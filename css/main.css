@@ -1,0 +1,93 @@
+
+@font-face {
+    font-family: "HGR";
+    src: url(./fonts/HindGuntur-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "HGRB";
+    src: url(./fonts/HindGuntur-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "MATERIAL";
+    src: url(./fonts/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/MaterialIcons-Regular.ttf) format("truetype"); 
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.has-bg-img {
+    background: url('../img/cancun-transfers.png')center center;
+    background-size: cover;
+}
+
+.header-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dividers {
+    margin-left:15px;
+    margin-right:15px;
+}
+
+.selected-menu-item {
+    color: #33aef0!important;
+    font-family: "HGRB"!important
+}
+
+.blueBottomLine {
+    border-bottom-color: #2a9dda!important;
+    border-bottom-style: solid!important;
+    border-bottom-width: 3px!important;
+}
+
+.beforeBlueBottomLine {
+    margin-top: 3px;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+}
+
+.HGR {
+    font-family: "HGR";
+}
+
+.HGRB {
+    font-family: "HGRB"
+}
+
+.MATERIAL{
+    font-family: "MATERIAL"
+}

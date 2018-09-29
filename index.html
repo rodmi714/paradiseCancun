@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bulma.css">
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <section class="header-container container">
+            <nav class="navbar navbar has-shadow  is-transparent" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="https://bulma.io">
+                        <img src="./img/logo.png" width="130px">
+                    </a>
+                    <div class="navbar-item is-hidden-mobile" style="width:20%;">
+                    </div>
+                    <div class="navbar-item">
+                        <div>
+                            <span class="HGR is-hidden-mobile is-size-6-desktop">Need Help? Call us now</span>
+                            <div class="level is-mobile">
+                                <i class="material-icons level-item" style="color:black;">phone</i>
+                                <span class="HGRB level-item is-size-6-desktop" style="color:#2a9dda;">+52 (998)
+                                    1124067</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" v-on:click="isClickedBurger = !isClickedBurger"
+                        v-bind:class=" {'is-active' : isClickedBurger }">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div class="navbar-menu HGR" v-bind:class=" {'is-active' : isClickedBurger }">
+                    <div class="navbar-end">
+                        <a style="margin-right:20px" class="navbar-item beforeBlueBottomLine">
+                            <span>Home</span>
+                        </a>
+                        <div style="margin-right:20px" class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link beforeBlueBottomLine" @mouseover="blueBottomLine = 1" @mouseout="blueBottomLine = false"
+                                :class="{blueBottomLine:blueBottomLine == 1}">
+                                Services
+                            </a>
+
+                            <div class="navbar-dropdown" @mouseout="blueBottomLine = false" @mouseover="blueBottomLine = 1">
+                                <a class="navbar-item" @mouseover="mouseOverNavItem(1,0)" @mouseout="mouseOverSelectedMenuItem = false"
+                                    v-bind:class="{'selected-menu-item': mouseOverSelectedMenuItem === 0}">
+                                    <i v-if="mouseOverSelectedMenuItem === 0" class="material-icons" style="color:#33aef0;width:1rem;height:1rem;">chevron_right</i>
+                                    <span>Our Fleet</span>
+                                </a>
+                                <hr class="navbar-divider dividers" @mouseover="blueBottomLine = 1">
+                                <a class="navbar-item" @mouseover="mouseOverNavItem(1,1)" @mouseout="mouseOverSelectedMenuItem = false"
+                                    v-bind:class="{'selected-menu-item': mouseOverSelectedMenuItem == 1}">
+                                    <i v-if="mouseOverSelectedMenuItem == 1" class="material-icons" style="color:#33aef0;width:1rem;height:1rem;">chevron_right</i>
+                                    <span>Tours</span>
+                                </a>
+                                <hr class="navbar-divider dividers" @mouseover="blueBottomLine = 1">
+                                <a class="navbar-item" @mouseover="mouseOverNavItem(1,2)" @mouseout="mouseOverSelectedMenuItem = false"
+                                    v-bind:class="{'selected-menu-item': mouseOverSelectedMenuItem == 2}">
+                                    <i v-if="mouseOverSelectedMenuItem == 2" class="material-icons" style="color:#33aef0;width:1rem;height:1rem;">chevron_right</i>
+                                    <span>Events and Groups</span>
+                                </a>
+                                <hr class="navbar-divider dividers" @mouseover="blueBottomLine = 1">
+                                <a class="navbar-item" @mouseover="mouseOverNavItem(1,3)" @mouseout="mouseOverSelectedMenuItem = false"
+                                    v-bind:class="{'selected-menu-item': mouseOverSelectedMenuItem == 3}">
+                                    <i v-if="mouseOverSelectedMenuItem == 3" class="material-icons" style="color:#33aef0;width:1rem;height:1rem;">chevron_right</i>
+                                    <span>Hourly Service</span>
+                                </a>
+                            </div>
+                        </div>
+                        <a style="margin-right:20px" class="navbar-item beforeBlueBottomLine">
+                            <span>Destinations</span>
+                        </a>
+                        <a style="margin-right:20px" class="navbar-item beforeBlueBottomLine">
+                            <span>Contact</span>
+                        </a>
+                        <a class="navbar-item beforeBlueBottomLine" href="https://bulma.io">
+                            <img style="height:1.5rem;" src="./img/bandera.png">
+                        </a>
+                    </div>
+
+
+
+            </nav>
+        </section>
+        <footer class="footer has-bg-img HGR has-text-white">
+            <div class="container has-text-centered">
+                <div class="columns">
+<div class="column is-one-quarter is-size-7-desktop is-size-7-touch has-text-left-desktop-only">
+                        <figure class="image">
+                            <img src="./img/cancun-transportation.png" style="width:130px;">
+                        </figure>
+                        <div class="has-text-left-desktop" style="color:white;text-align: left;margin-top: 40px;">
+                            Cancun Paradise Transfers is the best in airport transportation with over 18 years of
+                            experience and 152, 3411
+                            passengers served.
+                        </div>
+                    </div>
+                    <div class="column is-half">
+                        <div class="columns has-text-left-desktop is-size-7-desktop">
+                            <div class="column is-one-third">
+                                <div class="is-size-7-desktop HGRB">SERVICES</div>
+                                <div style="margin-top:10px;">
+                                    <div>Van Transfers</div>
+                                    <div>SUV Transfers</div>
+                                    <div>VIP Transfers</div>
+                                </div>
+                            </div>
+                            <div class="column is-one-third is-size-7-desktop">
+                                <div class=" HGRB">DESTINATIONS</div>
+                                <div style="margin-top:10px;">
+                                    <div>Cancun</div>
+                                    <div>Akumal</div>
+                                    <div>Tulum</div>
+                                    <div>Playa Mujeres</div>
+                                    <div>Playa del Carmen</div>
+                                    <div>Puerto Aventuras</div>
+                                </div>
+                            </div>
+                            <div class="column is-one-third is-size-7-desktop">
+                                <div class="is-size-6-desktop HGRB">NEED HELP?</div>
+                                <div style="margin-top:10px;">
+                                    <div>Van Transfers</div>
+                                    <div>SUV Transfers</div>
+                                    <div>VIP Transfers</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-quarter">
+                        Third column
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-one-third">
+                        1
+                    </div>
+                    <div class="column is-one-third">
+                        2
+                    </div>
+                    <div class="column is-one-third">
+                        3
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            name: "que peo prro",
+            isClickedBurger: false,
+            mouseOverSelectedMenuItem: false,
+            blueBottomLine: false
+        },
+        methods: {
+            mouseOverNavItem: function (fatherMenuItem, Item) {
+                this.mouseOverSelectedMenuItem = Item
+                this.blueBottomLine = fatherMenuItem
+            }
+        }
+    })
+</script>
