@@ -8,6 +8,7 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"> -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/bulma.css">
+    <link href=".css/fonts/brands.css" rel="stylesheet">
     <script src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
@@ -15,7 +16,7 @@
 
 <body>
     <div id="app">
-        <section class="header-container container">
+        <section class="header-container container is-fluid">
             <nav class="navbar navbar has-shadow  is-transparent" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="https://bulma.io">
@@ -93,21 +94,23 @@
 
             </nav>
         </section>
-        <footer class="footer has-bg-img HGR has-text-white">
-            <div class="container has-text-centered">
+        <footer class="footer has-bg-img HGR has-text-white" style="padding-left: 0px;padding-right: 0px;">
+            <div class="container is-fluid has-text-centered-mobile">
                 <div class="columns">
-<div class="column is-one-quarter is-size-7-desktop is-size-7-touch has-text-left-desktop-only">
-                        <figure class="image">
-                            <img src="./img/cancun-transportation.png" style="width:130px;">
-                        </figure>
-                        <div class="has-text-left-desktop" style="color:white;text-align: left;margin-top: 40px;">
+                    <div class="column is-one-quarter is-size-7-desktop is-size-7-touch has-text-left-desktop has-text-centered-touch">
+                        <div style="display: inline-flex;">
+                            <figure class="image">
+                                <img src="./img/cancun-transportation.png" style="width:130px;">
+                            </figure>
+                        </div>
+                        <div class="has-text-left-tablet has-text-centered-touch" style="color:white;text-align: left;margin-top: 40px;">
                             Cancun Paradise Transfers is the best in airport transportation with over 18 years of
                             experience and 152, 3411
                             passengers served.
                         </div>
                     </div>
                     <div class="column is-half">
-                        <div class="columns has-text-left-desktop is-size-7-desktop">
+                        <div class="columns has-text-left-desktop is-size-7">
                             <div class="column is-one-third">
                                 <div class="is-size-7-desktop HGRB">SERVICES</div>
                                 <div style="margin-top:10px;">
@@ -116,7 +119,7 @@
                                     <div>VIP Transfers</div>
                                 </div>
                             </div>
-                            <div class="column is-one-third is-size-7-desktop">
+                            <div class="column is-one-third is-size-7">
                                 <div class=" HGRB">DESTINATIONS</div>
                                 <div style="margin-top:10px;">
                                     <div>Cancun</div>
@@ -127,8 +130,8 @@
                                     <div>Puerto Aventuras</div>
                                 </div>
                             </div>
-                            <div class="column is-one-third is-size-7-desktop">
-                                <div class="is-size-6-desktop HGRB">NEED HELP?</div>
+                            <div class="column is-one-third is-size-7">
+                                <div class="HGRB">NEED HELP?</div>
                                 <div style="margin-top:10px;">
                                     <div>Van Transfers</div>
                                     <div>SUV Transfers</div>
@@ -137,8 +140,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column is-one-quarter">
-                        Third column
+                    <div class="column is-one-quarter is-size-7">
+                        <div class="HGRB">GET IN TOUCH</div>
+                        <div style="margin-top:10px;">
+                            <div>Give us a call</div>
+                            <div class="HGRB is-size-4-desktop">+52 (998) 1124067</div>
+                            <div>Give us a message</div>
+                            <div class="HGRB">reservations@cancunparadise.com</div>
+                            <div class="has-text-centered-touch" style="display:inline-flex;margin-top:20px;">
+                                <div style="margin-right: 20px;"><i class="fab fa-facebook-f fa-2x"></i></div>
+                                <div style="margin-right:20px;"><i class="fab fa-instagram fa-2x"></i></div>
+                                <div><i class="fab fa-twitter fa-2x"></i></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="columns">
