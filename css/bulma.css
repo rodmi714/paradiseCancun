@@ -312,10 +312,17 @@ body {
 }
 
 a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a.navbar-burger{
   color: #33aef0;
   cursor: pointer;
   text-decoration: none;
 }
+
 a strong {
   color: currentColor;
 }
